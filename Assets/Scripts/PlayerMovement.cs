@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+  public DynamicJoystick joystick;
   public float speed;
   // Start is called before the first frame update
   void Start()
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    transform.position += Vector3.forward * Time.deltaTime * speed;   
+    transform.position += (Vector3.right + Vector3.back * joystick.Horizontal) 
+                          * Time.deltaTime * speed;   
   }
 }
