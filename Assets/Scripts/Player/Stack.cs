@@ -11,10 +11,14 @@ public class Stack : MonoBehaviour
   }
 
   public void AddBottle(GameObject bottle){
+    if(bottle.GetComponent<BottleManager>() != null){
+      bottle.GetComponent<BottleManager>().index = bottles.Count;
+      bottle.GetComponent<BottleManager>().bottles = this;
+    }
     bottles.Add(bottle);
   }
 
-  private void PopBottles(int index){
+  public void PopBottles(int index){
     bottles.RemoveRange(index, bottles.Count - index - 1);
   }
 }

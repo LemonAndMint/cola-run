@@ -1,7 +1,9 @@
 using UnityEngine.UI;
+using UnityEngine;
 
-public class TypeOfManager
+public class TypeOfManager : MonoBehaviour
 {
+  [HideInInspector]
   public Text scoreText;
   private float initialScore = 200f;
 
