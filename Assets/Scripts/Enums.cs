@@ -1,0 +1,1 @@
+public enum GameState { initiliaze, start, stay, restart}

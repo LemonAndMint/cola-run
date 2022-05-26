@@ -13,7 +13,7 @@ public class StackMovement : MonoBehaviour
   }
 
   // Update is called once per frame
-  void Update()
+  void FixedUpdate()
   {
     movement();
   }
@@ -21,7 +21,7 @@ public class StackMovement : MonoBehaviour
   private void movement(){
     bottleCount = stack.bottles.Count;
     for(int i = 1; i < bottleCount; i++){
-      stack.bottles[i].transform.position = Vector3.Lerp(stack.bottles[i - 1].transform.position + Vector3.right * 1.2f, /*  */ 
+      stack.bottles[i].transform.position = Vector3.Lerp(stack.bottles[i - 1].transform.position + Vector3.right * 1.8f,
                                                          stack.bottles[i].transform.position, 0.9f);
     }
   }
