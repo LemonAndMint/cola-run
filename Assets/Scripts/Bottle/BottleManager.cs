@@ -7,9 +7,24 @@ public class BottleManager : MonoBehaviour
   [HideInInspector]
   public int index = -1;
   [HideInInspector]
-  public Stack bottles;
+  public int tier = -1; 
+  [HideInInspector]
+  public Stack stack;
 
   public void bottleDestroy(){
     Destroy(this.gameObject);
+  }
+
+  public void fly(){
+    GetComponent<Rigidbody>().AddForce((Vector3.back * Random.Range(-1f, 1f) + 
+                                        Vector3.right * Random.Range(2f, 3f)) * 100f);
+  }
+
+  public void changeGFX(){
+    tier++;
+
+    Destroy(transform.GetChild(0).gameObject);
+    
+    Instantiate(stack.GFXs[tier], transform.position, Quaternion.identity, transform);
   }
 }

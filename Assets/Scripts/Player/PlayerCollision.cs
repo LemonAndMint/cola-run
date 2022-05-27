@@ -10,7 +10,6 @@ public class PlayerCollision : MonoBehaviour
     GameObject tempObj = other.gameObject; 
     if(tempObj.tag == "bottle"){
       bottles.AddBottle(tempObj);
-      tempObj.tag = "Untagged";
     }
   }
 }

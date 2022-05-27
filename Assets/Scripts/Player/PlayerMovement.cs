@@ -16,9 +16,6 @@ public class PlayerMovement : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
-    /*transform.position += (Vector3.right + Vector3.back * joystick.Horizontal) 
-                          * Time.deltaTime * speed; */
-
     rb.MovePosition(rb.position + (Vector3.right + Vector3.back * joystick.Horizontal) 
                                   * Time.deltaTime * speed);
   }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8872556554625772738}
   - component: {fileID: 8751913764415896943}
   - component: {fileID: 4895782238299144378}
+  - component: {fileID: 551660740935010577}
   m_Layer: 0
   m_Name: Plate Obstacle
   m_TagString: obstacle
@@ -59,6 +60,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22754669, y: 1.1745161, z: 1.6602347}
   m_Center: {x: 0.009075165, y: 0.011322796, z: 1.6898335}
+--- !u!95 &551660740935010577
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8872556554625772737}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df66b8cf93123064c9c262e8e4cd4286, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &5347285235096017919
 PrefabInstance:
   m_ObjectHideFlags: 0

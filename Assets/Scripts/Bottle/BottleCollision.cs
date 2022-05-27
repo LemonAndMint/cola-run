@@ -9,7 +9,7 @@ public class BottleCollision : MonoBehaviour
   private void OnTriggerEnter(Collider other) {
     GameObject tempObj = other.gameObject; 
     if(tempObj.tag == "obstacle"){
-      bm.bottles.PopBottles(bm.index);
+      bm.stack.PopBottles(bm.index);
       bm.bottleDestroy();
     }
   }
