@@ -11,7 +11,6 @@ public class TypeOfManager : MonoBehaviour
   }
 
   public void UpdateScoreText(){
-    Debug.Log(initialScore);
     scoreText.text = initialScore.ToString();
   }
 }
