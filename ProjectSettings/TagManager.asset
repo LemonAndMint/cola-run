@@ -9,6 +9,8 @@ TagManager:
   - can
   - glass bottle
   - plastic bottle
+  - FxTemporaire
+  - gfx
   layers:
   - Default
   - TransparentFX

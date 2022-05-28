@@ -10,6 +10,10 @@ public class PlayerManager : MonoBehaviour
     playerAnim.SetBool("started", true);
   }
 
+  public void winAnim(){
+    playerAnim.SetBool("win", true);
+  }
+
   public void failAnim(){
     playerAnim.SetBool("failed", true);
   }

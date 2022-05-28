@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 {
   public GameObject joystick;
   public GameObject player;
+  public GameObject winPanel;
+
+  public TypeOfManager tom;
 
   private PlayerMovement pmov;
   private PlayerManager pmag;
@@ -17,6 +20,8 @@ public class GameManager : MonoBehaviour
   {
     pmov = player.GetComponent<PlayerMovement>();
     pmag = player.GetComponent<PlayerManager>();
+
+    tom.UpdateScoreText();
 
     gamestate = GameState.initiliaze;
     pmov.enabled = false;
@@ -35,8 +40,8 @@ public class GameManager : MonoBehaviour
 			case GameState.start:
 				break;
 			case GameState.stay:
-        if(joystick.activeSelf == true){
           pmov.enabled = false;
+        if(joystick.activeSelf == true){
           gamestate = GameState.restart;
         }
 				break;
@@ -54,9 +59,12 @@ public class GameManager : MonoBehaviour
 	}
 
   public void win(){
-    
+    pmag.winAnim();
+    winPanel.SetActive(true);
+    gamestate = GameState.stay;
   }
   public void lose(){
     pmag.failAnim();
+    gamestate = GameState.stay;
   }
 }

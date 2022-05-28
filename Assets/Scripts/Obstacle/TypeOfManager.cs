@@ -3,15 +3,14 @@ using UnityEngine;
 
 public class TypeOfManager : MonoBehaviour
 {
-  [HideInInspector]
   public Text scoreText;
   private float initialScore = 200f;
 
-  public void DecreaseinitialScore(float amount){
+  internal void DecreaseinitialScore(float amount){
     initialScore -= amount;
   }
 
-  public void IncreaseinitialScore(float amount){
+  internal void IncreaseinitialScore(float amount){
     initialScore += amount;
   }
 

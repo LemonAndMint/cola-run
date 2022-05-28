@@ -11,6 +11,8 @@ public class BottleManager : MonoBehaviour
   [HideInInspector]
   public Stack stack;
 
+  public ParticleSystem particle;
+
   public void bottleDestroy(){
     Destroy(this.gameObject);
   }
@@ -22,8 +24,16 @@ public class BottleManager : MonoBehaviour
 
   public void changeGFX(){
     tier++;
+    particle.Stop();
+    particle.Play();
 
-    Destroy(transform.GetChild(0).gameObject);
+    foreach (Transform item in transform)
+    {
+      if(item.tag == "gfx"){
+        Destroy(item.gameObject);
+      }
+    }
+
     
     Instantiate(stack.GFXs[tier], transform.position, Quaternion.identity, transform);
   }
