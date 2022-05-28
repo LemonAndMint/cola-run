@@ -14,6 +14,9 @@ public class BottleManager : MonoBehaviour
   public ParticleSystem particle;
 
   public void bottleDestroy(){
+    particle.Stop();
+    particle.Play();
+
     Destroy(this.gameObject);
   }
 
@@ -34,7 +37,6 @@ public class BottleManager : MonoBehaviour
       }
     }
 
-    
     Instantiate(stack.GFXs[tier], transform.position, Quaternion.identity, transform);
   }
 }

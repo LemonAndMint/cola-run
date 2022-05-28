@@ -10,11 +10,8 @@ public class TypeOfManager : MonoBehaviour
     initialScore -= amount;
   }
 
-  internal void IncreaseinitialScore(float amount){
-    initialScore += amount;
-  }
-
   public void UpdateScoreText(){
+    Debug.Log(initialScore);
     scoreText.text = initialScore.ToString();
   }
 }

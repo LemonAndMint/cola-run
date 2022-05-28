@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-  public Stack bottles;
+  public Stack stack;
+  public GameManager gm;
 
   private void OnTriggerEnter(Collider other) {
     GameObject tempObj = other.gameObject; 
     if(tempObj.tag == "bottle"){
-      bottles.AddBottle(tempObj);
+      stack.AddBottle(tempObj);
+    }
+
+    if(tempObj.tag == "obstacle" && stack.bottles.Count <= 1){
+      gm.lose();
     }
   }
 }

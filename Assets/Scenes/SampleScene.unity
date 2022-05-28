@@ -175,7 +175,6 @@ MonoBehaviour:
   joystick: {fileID: 1896523565}
   player: {fileID: 1302900773}
   winPanel: {fileID: 328978010}
-  tom: {fileID: 141141667}
 --- !u!114 &141141667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,9 +867,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1462162903}
     m_Modifications:
     - target: {fileID: 4005340203745973595, guid: 7dcabf3d204008843be2f7b3b703b480, type: 3}
+      propertyPath: tom
+      value: 
+      objectReference: {fileID: 141141667}
+    - target: {fileID: 4005340203745973595, guid: 7dcabf3d204008843be2f7b3b703b480, type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 683683211}
+      objectReference: {fileID: 498638265}
     - target: {fileID: 4760583480313757506, guid: 7dcabf3d204008843be2f7b3b703b480, type: 3}
       propertyPath: m_Name
       value: Spoetted Cylinder Obstacle (1)
@@ -1030,9 +1033,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1462162903}
     m_Modifications:
     - target: {fileID: 8751913764415896943, guid: 3f334f732745c9544804b4f5f56e5eb9, type: 3}
+      propertyPath: tom
+      value: 
+      objectReference: {fileID: 141141667}
+    - target: {fileID: 8751913764415896943, guid: 3f334f732745c9544804b4f5f56e5eb9, type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 683683211}
+      objectReference: {fileID: 498638265}
     - target: {fileID: 8872556554625772737, guid: 3f334f732745c9544804b4f5f56e5eb9, type: 3}
       propertyPath: m_Name
       value: Plate Obstacle (1)
@@ -2747,6 +2754,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1462162903}
     m_Modifications:
     - target: {fileID: 4005340203745973595, guid: 7dcabf3d204008843be2f7b3b703b480, type: 3}
+      propertyPath: tom
+      value: 
+      objectReference: {fileID: 141141667}
+    - target: {fileID: 4005340203745973595, guid: 7dcabf3d204008843be2f7b3b703b480, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 498638265}
@@ -2946,9 +2957,13 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6426885627494739310, guid: e70b6ef6afe624345a1e8cf05b4d7de1, type: 3}
+      propertyPath: tom
+      value: 
+      objectReference: {fileID: 141141667}
+    - target: {fileID: 6426885627494739310, guid: e70b6ef6afe624345a1e8cf05b4d7de1, type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 683683211}
+      objectReference: {fileID: 498638265}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e70b6ef6afe624345a1e8cf05b4d7de1, type: 3}
 --- !u!4 &6223947873908791033 stripped
@@ -3095,9 +3110,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1462162903}
     m_Modifications:
     - target: {fileID: 8751913764415896943, guid: 3f334f732745c9544804b4f5f56e5eb9, type: 3}
+      propertyPath: tom
+      value: 
+      objectReference: {fileID: 141141667}
+    - target: {fileID: 8751913764415896943, guid: 3f334f732745c9544804b4f5f56e5eb9, type: 3}
       propertyPath: scoreText
       value: 
-      objectReference: {fileID: 683683211}
+      objectReference: {fileID: 498638265}
     - target: {fileID: 8872556554625772737, guid: 3f334f732745c9544804b4f5f56e5eb9, type: 3}
       propertyPath: m_Name
       value: Plate Obstacle
